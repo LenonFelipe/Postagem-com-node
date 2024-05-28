@@ -40,11 +40,11 @@ const Post = require('./models/Post')
             })
         })
 
-        app.get("/deletar/:id", function(req, res){
-            Post.destroy({where: {"id": req.params.id}}).then(function(){
+        app.get("/deletar/:id", (req, res) => {
+            Post.destroy({where: {"id": req.params.id}}).then(() => {
                 res.send("Postagem excluída com sucesso!")
-            }).catch(function(erro){
-                res.send("Esta postagem não existe!")
+            }).catch((erro) => {
+                res.send("Ocorreu um erro! " + erro)
             })
         })
 
