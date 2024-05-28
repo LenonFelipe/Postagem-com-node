@@ -1,9 +1,14 @@
-<h1>Lista de Posts: </h1>
+<h1 
+style="background: rgb(108, 175, 192); 
+display: flex;
+justify-content: center;
+color: rgb(188, 223, 224);"
+>Lista de Posts:</h1>
 
 {{#each posts}}
-<small>{{createdAt}}</small>
-<h1>{{titulo}}</h1>
-<p>{{conteudo}}</p>
-<a href="/deletar/{{id}}"><button>Deletar</button></a>
+<small style="color: rgb(188, 223, 224);;">{{createdAt}}</small>
+<h1 style="color:rgb(108, 175, 192);">{{titulo}}</h1>
+<p style="color: #fff;">{{conteudo}}</p>
+<a href="/deletar/{{id}}"><button style="background: #fff; color: red; border: none; margin: 5px; padding: 5px; font-weight: bold; cursor: pointer;">Deletar</button></a>
 <hr>
 {{/each}}
