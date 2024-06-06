@@ -1,4 +1,4 @@
-<h1>Aplicação simples de postagens</h1>
+<h1>Aplicação de postagens</h1>
 <h3>Como funciona? :</h3>
 <p>Na verdade só estou mostrando dados do banco de dados que criei. <br />
 Nessa aplicação você cria um dado no banco e ele fica exposto em uma lista</p>
